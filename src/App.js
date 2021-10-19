@@ -1,23 +1,45 @@
-import logo from './logo.svg';
+
 import './App.css';
+import MoreOrLess from './more-or-less/MoreOrLess';
+import { Route} from 'react-router-dom';
+import { Link} from 'react-router-dom';
+import Test from './test/Test';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   
+    <Route path='/moreOrLess' >
+      <MoreOrLess/>
+    </Route>
+    <Route path='/test' >
+      <Test/>
+    </Route>
+
+    <div className="conteinerBox">
+      <div className="box">
+      <h4>Игра больше-меньше</h4>
+      <img src='/moreOrLess.png' />
+      <div>
+      <Link to='/MoreOrLess'>
+      <button   className="buttonBox">Перейти</button>
+      </Link>
+      </div>   
+      </div>
+
+      <div className="box">
+      <h4>Тест</h4>
+      <img  />
+      <div>
+      <Link to='/Test'>
+      <button   className="buttonBox">Перейти</button>
+      </Link>
+      </div>
+      </div>
+
+
+
+      </div>
     </div>
   );
 }

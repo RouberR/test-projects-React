@@ -1,0 +1,47 @@
+.header{
+    background-color:grey;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: black;
+    font-size: calc(10px + 2vmin);
+    color: rgb(247, 247, 247);
+    
+}
+.h2{
+    margin: 10px;
+}
+.logicText{
+    color:brown;
+}
+
+.box {
+    background-color:burlywood;
+    margin: auto;
+    border-radius: 30px;
+    
+    
+}
+
+
+.textRandom{
+    margin-top: 50px;
+    border-radius: 30px;
+  }
+
+.buttonRandom{
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+    p{
+        margin: 10px;
+        margin-top: 20px;
+        margin-right: 40px;
+    }
+
+    input{
+        border-radius:30px;
+        
+    }
+}
