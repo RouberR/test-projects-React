@@ -1,0 +1,84 @@
+.header{
+    background-color:rgba(29, 219, 233, 0.74);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: black;
+    font-size: calc(10px + 2vmin);
+    color: rgb(247, 247, 247);
+
+}
+
+.tasks{
+    list-style: none;
+    
+
+  
+
+    .remove{
+        width: 12px;
+        height: 12px;
+        align-items:center;
+        opacity: 0;
+        margin-left: 5px;
+        padding-bottom: 1px;
+    }
+
+    
+}
+.checked{
+    margin-right: 10px;
+    
+    &:checked{
+        background-color: green;
+      
+    }
+}
+.task{
+    &:hover .remove {
+        opacity: 1; 
+    }
+
+    &:hover{
+        color:rgba(104, 219, 200, 0.747);
+    }
+
+   
+}
+
+.textInput{
+    background-color: rgba(167, 167, 167, 0);
+    border: 0px;
+    border-bottom: 2px solid rgb(0, 217, 255);
+    text-align: center;
+    margin-left: 5px;
+
+    &::placeholder{
+        color:black;
+    }
+
+
+}
+
+.button{
+    background-color: rgba(255, 255, 255, 0.411);
+    border:0px;
+    border-radius: 30px;
+    opacity: 0.5;
+   
+    &:hover{
+        opacity: 1;
+    }
+    &:active{
+        background-color: rgba(3, 48, 247, 0.445);
+    }
+}
+
+.changeText{
+    color:rgba(29, 233, 138, 0.74);
+}
+
+.boxInput{
+    margin-bottom: 200px;
+}

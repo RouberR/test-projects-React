@@ -1,0 +1,14 @@
+{
+  "tasks": [
+    {
+      "text": "Купить макароны ",
+      "completed": false,
+      "id": 1
+    },
+    {
+      "text": "Посмотреть аниме",
+      "completed": false,
+      "id": 2
+    }
+  ]
+}
